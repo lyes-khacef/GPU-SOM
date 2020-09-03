@@ -50,7 +50,7 @@ def run_som(eps_i, eps_f, eta_i, eta_f):
     weights = som.get_weights().numpy()
 
     # save the weights
-    np.save("weights/som_weights.npy", weights)
+    #np.save("weights/som_weights.npy", weights)
     
     # label the network
     neuron_label = labeling(label_data, class_nbr, weights, x_label, index_label, sigma_kernel)
